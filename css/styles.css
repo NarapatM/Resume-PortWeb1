@@ -11563,6 +11563,12 @@ html {
   background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.text-gradient:hover {
+  opacity: 0.8;
+  transform: translateY(-3px);
 }
 
 .rounded-4 {
@@ -11586,6 +11592,10 @@ html {
   margin-top: 5vw;
   max-height: 40rem;
   max-width: 40rem;
+  transition: transform 0.3s ease;
+}
+.profile:hover {
+  transform: scale(1.02);
 }
 .profile .profile-img {
   height: 80vw;
@@ -11594,6 +11604,10 @@ html {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  transition: transform 0.3s ease;
+}
+.profile:hover .profile-img {
+  transform: translateX(-50%) translateY(-5px);
 }
 .profile .dots-1 {
   position: absolute;
